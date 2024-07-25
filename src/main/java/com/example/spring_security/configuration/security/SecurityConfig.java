@@ -36,7 +36,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             
     }
 
-    @Bean
+    // @Bean
+    // public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+    //     return authenticationConfiguration.getAuthenticationManager();
+    // }
+
+    // @Bean
+    /* 
     public UserDetailsService users() {
 
         UserDetails admin = User.builder()
@@ -53,6 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         return new InMemoryUserDetailsManager(admin, user);
     }
+    */
 
     @Bean
     public PasswordEncoder passwordEncoder() {
